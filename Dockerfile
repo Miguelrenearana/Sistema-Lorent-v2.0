@@ -24,7 +24,7 @@ RUN composer install --no-dev --optimize-autoloader
 
 # JS deps + build
 RUN npm install --legacy-peer-deps
-RUN npm run build
+RUN npx vite build
 
 #Js deeps + build
 RUN ls -la public
